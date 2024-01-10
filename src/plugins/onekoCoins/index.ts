@@ -23,12 +23,7 @@ export default definePlugin({
     name: "oneko coins",
     description: "oneko but with coins",
     // Listing adryd here because this literally just evals her script
-    authors: [Devs.Ven, Devs.adryd,
-    {
-        id: 351859727568994314n,
-        name: "0xGingi"
-    },
-    ],
+    authors: [Devs.Ven, Devs.adryd, Devs.Gingi],
 
     start() {
         const coinCounterEl = document.createElement('div');
