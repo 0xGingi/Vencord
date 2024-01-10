@@ -53,6 +53,10 @@ export default definePlugin({
     },
 
     stop() {
+        const coinsEnabled = settings.store.coinsEnabled;
         document.getElementById("oneko")?.remove();
+        if (coinsEnabled) {
+            document.getElementById("coin")?.remove();
+        }
     }
 });
