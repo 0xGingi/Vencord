@@ -10,6 +10,7 @@ import { Message } from "discord-types/general";
 import { buildEncryptModal } from "./components/EncryptionModal";
 import { buildDecryptModal } from "./components/DecryptionModal";
 import { encrypt, decrypt } from "./encryption";
+import { settings } from "./settings";
 
 export const settings = definePluginSettings({
     defaultPassword: {
@@ -45,7 +46,8 @@ const channelPasswords = new Map<string, string>();
 export default definePlugin({
     name: "E2EChat",
     description: "End-to-end encrypted chat for Discord with proper encryption",
-    authors: [Devs.You],
+    authors: [Devs.Ven],
+    tags: ["0xGingi"],
     dependencies: ["MessageEventsAPI", "MessageUpdaterAPI"],
     settings,
 

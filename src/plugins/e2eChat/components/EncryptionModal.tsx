@@ -8,7 +8,7 @@ import {
 } from "@utils/modal";
 import { Button, Forms, React, Switch, TextInput, Tooltip } from "@webpack/common";
 
-import { settings } from "../index";
+import { settings } from "../settings";
 import { encrypt } from "../encryption";
 
 interface EncryptionModalProps {
