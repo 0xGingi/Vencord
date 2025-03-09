@@ -11,7 +11,7 @@ import { buildEncryptModal } from "./components/EncryptionModal";
 import { buildDecryptModal } from "./components/DecryptionModal";
 import { encrypt, decrypt } from "./encryption";
 
-const settings = definePluginSettings({
+export const settings = definePluginSettings({
     defaultPassword: {
         type: OptionType.STRING,
         default: "",
